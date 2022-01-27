@@ -1,0 +1,32 @@
+        <main>
+
+            <section id="home">
+                <div class="home-container">
+
+                    <div class="short-info">
+                        <h1>The best of the wildlife photography.</h1>
+                        <h2>Share knowledge about the environment and enrich your life.</h2>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="home-page">
+                {{#if allPosts}}
+                <div class="offers">
+                    {{#each allPosts}}
+                    <div class="col container"><img src="{{imgUrl}}" alt="nature_1"></div>
+                   {{/each}}
+                </div>
+                {{else}}
+                <div class="no-posts">
+                        <div class="no-posts-img">
+                            <img src="/static/img/animal.jpg" alt="image_nature_3">
+                        </div>
+                        <p class="no-offer">There are no posts yet...</p>
+                    </div>
+                {{/if}}
+            </section>
+
+
+        </main>
